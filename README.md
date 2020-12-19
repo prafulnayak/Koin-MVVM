@@ -39,7 +39,7 @@ KOIN Dependency Injection over MVVM architecture
         
     }
 
-# Plugings:
+# Plugins:
 
     plugins {
 
