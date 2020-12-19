@@ -29,17 +29,23 @@ KOIN Dependency Injection over MVVM architecture
     ext.koin_version = "2.2.1"
     ext.retrofit_version = "2.9.0"
     ext.room_version ="2.2.6"
+    
 dependencies {
+
         classpath "com.android.tools.build:gradle:4.1.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.koin:koin-gradle-plugin:$koin_version"
+        
     }
 
 # Plugings:
+
 plugins {
+
     id 'com.android.application'
     id 'kotlin-android'
     id 'koin'
     id 'kotlin-kapt'
+    
 }
     
