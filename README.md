@@ -16,11 +16,11 @@ KOIN Dependency Injection over MVVM architecture
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
     // Koin AndroidX Fragment features
     implementation "org.koin:koin-androidx-fragment:$koin_version"
-    // Koin AndroidX WorkManager
+    // Koin AndroidX WorkManager (Not required for this sample implementation)
     implementation "org.koin:koin-androidx-workmanager:$koin_version"
     // Koin AndroidX Jetpack Compose
     implementation "org.koin:koin-androidx-compose:$koin_version"
-    // Koin AndroidX Experimental features
+    // Koin AndroidX Experimental features (Not Required)
     implementation "org.koin:koin-androidx-ext:$koin_version"
     
     
