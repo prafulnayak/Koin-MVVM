@@ -9,9 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name="org.sairaa.dqn.MyApp"
+        android:name="org.sairaa.rightly.MyApp"
         android:theme="@style/Theme.Dqn">
-        <activity android:name="org.sairaa.dqn.MainActivity">
+        <activity android:name="org.sairaa.rightly.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

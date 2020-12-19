@@ -1,9 +1,9 @@
-package org.sairaa.dqn.repository
+package org.sairaa.rightly.repository
 
 import android.content.Context
-import org.sairaa.dqn.database.dao.SampleDao
-import org.sairaa.dqn.database.model.Sample
-import org.sairaa.dqn.network.api.SampleApi
+import org.sairaa.rightly.database.dao.SampleDao
+import org.sairaa.rightly.database.model.Sample
+import org.sairaa.rightly.network.api.SampleApi
 import java.lang.Exception
 
 interface SampleRepository{

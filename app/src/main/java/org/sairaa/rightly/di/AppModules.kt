@@ -1,15 +1,15 @@
-package org.sairaa.dqn.di
+package org.sairaa.rightly.di
 
 import android.app.Application
 import android.content.Context
 import androidx.room.Room
 import com.example.dqn.R
-import org.sairaa.dqn.database.dao.SampleDao
-import org.sairaa.dqn.database.db.AppDb
-import org.sairaa.dqn.network.api.SampleApi
-import org.sairaa.dqn.repository.SampleRepository
-import org.sairaa.dqn.repository.SampleRepositoryImpl
-import org.sairaa.dqn.viewModels.SampleViewModel
+import org.sairaa.rightly.database.dao.SampleDao
+import org.sairaa.rightly.database.db.AppDb
+import org.sairaa.rightly.network.api.SampleApi
+import org.sairaa.rightly.repository.SampleRepository
+import org.sairaa.rightly.repository.SampleRepositoryImpl
+import org.sairaa.rightly.viewModels.SampleViewModel
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidApplication
 import org.koin.android.ext.koin.androidContext

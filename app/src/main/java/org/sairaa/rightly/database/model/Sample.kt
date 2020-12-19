@@ -1,4 +1,4 @@
-package org.sairaa.dqn.database.model
+package org.sairaa.rightly.database.model
 
 import android.provider.BaseColumns
 import androidx.room.ColumnInfo

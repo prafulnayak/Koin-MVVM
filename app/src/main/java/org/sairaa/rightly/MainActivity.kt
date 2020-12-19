@@ -1,4 +1,4 @@
-package org.sairaa.dqn
+package org.sairaa.rightly
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import androidx.lifecycle.Observer
 import com.example.dqn.R
 import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
-import org.sairaa.dqn.viewModels.SampleViewModel
+import org.sairaa.rightly.viewModels.SampleViewModel
 
 class MainActivity : AppCompatActivity() {
 

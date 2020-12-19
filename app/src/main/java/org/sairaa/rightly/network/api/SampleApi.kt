@@ -1,6 +1,6 @@
-package org.sairaa.dqn.network.api
+package org.sairaa.rightly.network.api
 
-import org.sairaa.dqn.database.model.Sample
+import org.sairaa.rightly.database.model.Sample
 import retrofit2.Response
 import retrofit2.http.GET
 

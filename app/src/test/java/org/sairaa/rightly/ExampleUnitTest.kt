@@ -1,4 +1,4 @@
-package org.sairaa.dqn
+package org.sairaa.rightly
 
 import org.junit.Test
 

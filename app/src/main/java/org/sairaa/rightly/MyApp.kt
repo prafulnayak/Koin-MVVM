@@ -1,7 +1,7 @@
-package org.sairaa.dqn
+package org.sairaa.rightly
 
 import android.app.Application
-import org.sairaa.dqn.di.*
+import org.sairaa.rightly.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

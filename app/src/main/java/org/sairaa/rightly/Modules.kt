@@ -1,4 +1,4 @@
-package org.sairaa.dqn
+package org.sairaa.rightly
 
 import androidx.lifecycle.ViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
