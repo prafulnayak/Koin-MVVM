@@ -1,4 +1,4 @@
-package com.example.dqn.database.model
+package org.sairaa.dqn.database.model
 
 import android.provider.BaseColumns
 import androidx.room.ColumnInfo

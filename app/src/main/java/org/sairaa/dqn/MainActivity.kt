@@ -1,16 +1,12 @@
-package com.example.dqn
-import androidx.appcompat.app.AppCompatActivity
+package org.sairaa.dqn
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.example.dqn.viewModels.SampleViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import com.example.dqn.R
 import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
-import org.koin.androidx.viewmodel.compat.ViewModelCompat.viewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
-import kotlin.coroutines.CoroutineContext
+import org.sairaa.dqn.viewModels.SampleViewModel
 
 class MainActivity : AppCompatActivity() {
 

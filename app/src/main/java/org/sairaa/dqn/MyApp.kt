@@ -1,8 +1,7 @@
-package com.example.dqn
+package org.sairaa.dqn
 
 import android.app.Application
-import com.example.dqn.di.*
-import kotlinx.coroutines.CoroutineScope
+import org.sairaa.dqn.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

@@ -1,4 +1,4 @@
-package com.example.dqn
+package org.sairaa.dqn
 
 import org.junit.Test
 

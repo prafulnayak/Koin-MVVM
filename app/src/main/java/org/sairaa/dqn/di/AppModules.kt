@@ -1,15 +1,15 @@
-package com.example.dqn.di
+package org.sairaa.dqn.di
 
 import android.app.Application
 import android.content.Context
 import androidx.room.Room
 import com.example.dqn.R
-import com.example.dqn.database.dao.SampleDao
-import com.example.dqn.database.db.AppDb
-import com.example.dqn.network.api.SampleApi
-import com.example.dqn.repository.SampleRepository
-import com.example.dqn.repository.SampleRepositoryImpl
-import com.example.dqn.viewModels.SampleViewModel
+import org.sairaa.dqn.database.dao.SampleDao
+import org.sairaa.dqn.database.db.AppDb
+import org.sairaa.dqn.network.api.SampleApi
+import org.sairaa.dqn.repository.SampleRepository
+import org.sairaa.dqn.repository.SampleRepositoryImpl
+import org.sairaa.dqn.viewModels.SampleViewModel
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidApplication
 import org.koin.android.ext.koin.androidContext
@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 val apiModule = module {
-    fun provideSampleApi(retrofit: Retrofit):SampleApi{
+    fun provideSampleApi(retrofit: Retrofit): SampleApi {
         return retrofit.create(SampleApi::class.java)
     }
     single { provideSampleApi(get()) }
@@ -54,13 +54,14 @@ val networkModule = module {
 }
 
 val databaseModule = module {
-    fun provideDatabase(application: Application):AppDb{
-        return Room.databaseBuilder(application,AppDb::class.java,"sample_db")
+    fun provideDatabase(application: Application): AppDb {
+        return Room.databaseBuilder(application,
+            AppDb::class.java,"sample_db")
             .fallbackToDestructiveMigration()
             .build()
     }
 
-    fun provideSampleDao(database:AppDb):SampleDao{
+    fun provideSampleDao(database: AppDb): SampleDao {
         return database.sampleDao
     }
 
@@ -70,8 +71,8 @@ val databaseModule = module {
 }
 
 val repositoryModule = module {
-    fun provideRepository(api:SampleApi, context: Context, dao:SampleDao):SampleRepositoryImpl{
-        return SampleRepositoryImpl(api,context,dao)
+    fun provideRepository(api: SampleApi, context: Context, dao: SampleDao): SampleRepositoryImpl {
+        return SampleRepositoryImpl(api, context, dao)
     }
 
     single<SampleRepository>(named("repository")) { provideRepository(get(),androidContext(),get()) }

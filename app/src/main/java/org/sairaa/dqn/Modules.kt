@@ -1,17 +1,16 @@
-package com.example.dqn
+package org.sairaa.dqn
 
 import androidx.lifecycle.ViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.module.Module
-import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
 val appModule: Module = module {
-    single{ SchoolCourse()}
+    single{ SchoolCourse() }
 
     factory { Friend() }
 
-    factory { Student(get(),get())}
+    factory { Student(get(), get()) }
 
 }
 
@@ -40,7 +39,7 @@ class Friend{
     }
 }
 
-class MainViewModel(val schoolCourse: SchoolCourse,val friend: Friend):ViewModel(){
+class MainViewModel(val schoolCourse: SchoolCourse, val friend: Friend):ViewModel(){
     fun performAction(){
         schoolCourse.study()
         friend.hangOut()

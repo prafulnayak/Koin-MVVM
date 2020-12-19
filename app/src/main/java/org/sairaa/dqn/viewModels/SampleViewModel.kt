@@ -1,10 +1,10 @@
-package com.example.dqn.viewModels
+package org.sairaa.dqn.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.dqn.database.model.Sample
-import com.example.dqn.repository.SampleRepository
+import org.sairaa.dqn.database.model.Sample
+import org.sairaa.dqn.repository.SampleRepository
 import kotlinx.coroutines.launch
 
 class SampleViewModel(val repository: SampleRepository):ViewModel() {

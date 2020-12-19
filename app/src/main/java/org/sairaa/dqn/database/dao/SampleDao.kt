@@ -1,10 +1,10 @@
-package com.example.dqn.database.dao
+package org.sairaa.dqn.database.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.dqn.database.model.Sample
+import org.sairaa.dqn.database.model.Sample
 
 @Dao
 interface SampleDao{
