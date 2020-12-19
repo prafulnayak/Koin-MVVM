@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">dqn</string>
+    <string name="baseUrl">https://test</string>
+</resources>
